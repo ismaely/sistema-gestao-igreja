@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+@File   : registar_cadastro_tribo.html
+@Author : Gunza Ismael ({__email})
+@Link   : 
+@Date   : 26/11/2019, 17:48:55
+-->
+{% extends 'home/index_base.html' %}{% block corpo %}{% load static %}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h3>Registar Cadastro de Tribo</h3>
+                <form class="form-horizontal" role="form" action="#" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Nome</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Localização</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Telefone</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Data</label>
+                        <div class="col-md-8 date">
+                            <input type="text" id="dp-3" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Descrição</label>
+                        <div class="col-md-8">
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class=" col-md-8">
+
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-info btn-lg btn-block">SALVAR</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,137 @@
+<!--
+@File   : registar_cadastro_membro.html
+@Author :  ({__email})
+@Link   : 
+@Date   : 24/11/2019, 02:09:54
+-->
+{% extends 'home/index_base.html' %}{% block corpo %}{% load static %}
+
+
+<!-- start: Content -->
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h3>Wizard With Submit</h3>
+                <form action="javascript:alert('Submited!');" role="form" class="form-horizontal">
+                    {% csrf_token %}
+                    <div class="wizard show-submit">
+                        <ul>
+                            <li>
+                                <a href="#step-5">
+                                    <span class="stepNumber">1</span>
+                                    <span class="stepDesc">User<br /><small>Personal data</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step-6">
+                                    <span class="stepNumber">2</span>
+                                    <span class="stepDesc">Contact<br /><small>Information</small></span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div id="step-5">
+
+                            <div class="form-group">
+
+                                <div class="col-md-4">
+                                    <label class=" control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class=" control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class=" control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="col-md-4">
+                                    <label class=" control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class=" control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class=" control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                    <label class="control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                                <div class="col-md-4 date">
+                                    <label class="control-label">Data</label>
+                                    <input type="text" id="dp-3" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div id="step-6">
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                    <label class="control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                                <div class="col-md-4 date">
+                                    <label class="control-label">Data</label>
+                                    <input type="text" id="dp-3" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                    <label class="control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">Escolha</label>
+                                    <select class="form-control select" data-live-search="true">
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                        <option>Option 5</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name" />
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end: Content -->
+
+
+{% endblock %}
